@@ -28,6 +28,8 @@ public class Login {
 
     public Login() {}
 
+// Core Validation Functions    
+    
     // Check Username contains an underscore and is not longer than 5 characters
     public boolean checkUserName() {
         if (inputUsername == null) return false;
