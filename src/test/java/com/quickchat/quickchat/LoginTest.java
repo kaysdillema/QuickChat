@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LoginTest {
-
+// JUnit Test Suite 
     @Test
     public void testUsernameCorrectlyFormatted() {
         // Test Data: "kyl_1" -> Should return True
