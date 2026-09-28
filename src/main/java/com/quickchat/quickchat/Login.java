@@ -2,6 +2,8 @@ package com.quickchat.quickchat;
 
 import java.util.regex.Pattern;
 
+// Property Declarations
+
 public class Login {
     // Credentials needed for the registration
     private String registeredUsername;
