@@ -20,6 +20,8 @@ public class QuickChat {
         
         boolean registrationSuccessful = false;
         
+        // Interactive Control Loop
+        
         // 2. The continuous loop until the user provides the correct credentials
         while (!registrationSuccessful) {
             System.out.print("\nCreate a Username (Must contain '_' and be max 5 characters): ");
