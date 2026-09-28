@@ -65,7 +65,7 @@ public class Login {
 }
 
 
-    // Messages to reply to conditions check
+    // Messages to reply to incorrect conditions check
     public String registerUser() {
         if (!checkUserName()) {
             return "Username is not correctly formatted; please ensure that your username contains an underscore and is no more than five characters in length.";
@@ -91,7 +91,7 @@ public class Login {
         if (this.registeredUsername == null || this.registeredPassword == null) return false;
         return this.registeredUsername.equals(username) && this.registeredPassword.equals(password);
     }
-
+    // message displayed after successful login
     public String returnLoginStatus(boolean isLoggedIn) {
         if (isLoggedIn) {
             return "Welcome " + firstName + ", " + lastName + " it is great to see you again.";
