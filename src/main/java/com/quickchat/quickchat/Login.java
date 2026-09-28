@@ -55,7 +55,7 @@ public class Login {
     // Check Cell Phone Number contains requirements via Regex
     public boolean checkCellPhoneNumber() {
     if (inputCellNumber == null) return false;
-    
+    //cleaned up cellphone number checking to only accept +27 instead of international
     // '+27' followed by 9 digits for the rest of the number
     String regex = "^\\+27\\d{9}$";
     
