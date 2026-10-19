@@ -18,7 +18,7 @@ public class MessageTest {
 
     @Test
     public void testMessageLengthFailure() {
-        // Constructing a payload that deliberately exceeds 250 characters
+        // Constructing a payload that intentionally exceeds 250 characters
         StringBuilder longPayload = new StringBuilder();
         for (int i = 0; i < 30; i++) {
             longPayload.append("This message is getting way too long ");
@@ -54,5 +54,15 @@ public class MessageTest {
         
         Message message = new Message(msgId, recipient, payload, 0);
         assertEquals("00:0:HITONIGHT", message.createMessageHash()); //
+    }
+    
+        @Test
+    public void testStoreMessageAsJSON() {
+        // Build a sample valid messaging payload block
+        Message message = new Message("0098765432", "+27718693002", "Hi Mike, can you join us for dinner tonight?", 1);
+        message.SentMessage(3); // Set status flags to 'Stored'
+        
+        // Assert that the JSON tracking system writes and responds with success text
+        assertEquals("Message successfully stored", message.storeMessage());
     }
 }

@@ -12,7 +12,7 @@ public class Message {
     // Default constructor
     public Message() {}
 
-    // Overloaded constructor for message processing instances
+    // Constructor for message processing instances
     public Message(String messageId, String recipientCell, String payload, int loopCounter) {
         this.messageId = messageId;
         this.recipientCell = recipientCell;
@@ -26,12 +26,12 @@ public class Message {
         return messageId.length() <= 10;
     }
 
-    // 2. Verify Recipient Number format matches Part 1 parameters
+    // 2. Verify Recipient Number format matches as in Part 1
     public String checkRecipientCell() {
         if (recipientCell == null) {
             return "Cell phone number is incorrectly formatted or does not contain an international code. Please correct the number and try again.";
         }
-        // Matches +27 format from previous task guidelines
+        // Matches +27 format from part 1
         String regex = "^\\+27\\d{9}$";
         if (recipientCell.startsWith("+27") && recipientCell.length() == 12 && Pattern.matches(regex, recipientCell)) {
             return "Cell phone number successfully captured.";
@@ -48,7 +48,7 @@ public class Message {
         // Extract first two digits of Message ID
         String idPrefix = messageId.substring(0, 2);
         
-        // Isolate words from string text payload block
+        // Isolate words 
         String[] words = payload.trim().split("\\s+");
         String firstWord = words[0].toUpperCase();
         String lastWord = words[words.length - 1].toUpperCase();
@@ -92,4 +92,28 @@ public class Message {
                "Message: " + payload + "\n" +
                "-------------------------------------";
     }
+    
+        // 7. Store Message variables as a JSON file
+    // Attributed reference: https://quickblox.com
+    public String storeMessage() {
+        try {
+            // Create a JSON object structure containing the core fields
+            org.json.JSONObject messageJson = new org.json.JSONObject();
+            messageJson.put("MessageID", this.messageId);
+            messageJson.put("MessageHash", this.createMessageHash());
+            messageJson.put("Recipient", this.recipientCell);
+            messageJson.put("Payload", this.payload);
+            messageJson.put("Status", this.messageStatus);
+
+            // Write the formatted JSON structure out to a local text file repository
+            java.io.FileWriter fileWriter = new java.io.FileWriter("messages.json", true);
+            fileWriter.write(messageJson.toString() + System.lineSeparator());
+            fileWriter.close();
+
+            return "Message successfully stored";
+        } catch (java.io.IOException exceptionDetails) {
+            return "Error writing to JSON storage array: " + exceptionDetails.getMessage();
+        }
+    }
 }
+

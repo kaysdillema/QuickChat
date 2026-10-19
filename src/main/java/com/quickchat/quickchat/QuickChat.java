@@ -112,11 +112,16 @@ public class QuickChat {
                         
                         System.out.println("\nChoose Action: 1) Send Message, 2) Disregard Message, 3) Store Message");
                         int action = inputScanner.nextInt();
-                        inputScanner.nextLine(); // Clear scanner buffer
+                        inputScanner.nextLine(); // Clear buffer
+
+                        // Print the initial response message
                         System.out.println(msg.SentMessage(action));
-                        
-                        System.out.println("\n--- Final Summary Details ---");
-                        System.out.println(msg.printMessages());
+
+                       // If option 3 is chosen, saves to the json file
+                       if (action == 3) {
+                       String storageOutput = msg.storeMessage();
+                       System.out.println("-> JSON System Report: " + storageOutput);
+                      }
                     }
                     break;
                     
