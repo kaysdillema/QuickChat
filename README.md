@@ -22,9 +22,15 @@ The variable parameters, required class structures, and input boundaries (includ
 
 ## References
 [1] K. Wright, "Git and GitHub Automated Testing Tutorial for Beginners," YouTube, Oct. 30, 2021. [Online Lecture Video]. Available: https://youtube.com. [Accessed: Sep. 28, 2026].
+
 [2] GitHub, Inc., "How to use GitHub Desktop," YouTube, May 20, 2021. [Online]. Available: https://youtube.com. [Accessed: Sep. 28, 2026].
+
 [3] The Independent Institute of Education, "Introduction to Programming (PROG5121) Module Outline & Portfolio of Evidence (PoE) Guidelines," The IIE, Sandton, 2026.
+
 [4] The Independent Institute of Education, "PROG5121 Assignment support-20260915_060748-Meeting Recording," The IIE, Sandton, Sep. 15, 2026. [Online Lecture Video].
+
 [5] Oracle, "Java Class String - Substring, Split, and Case Conversion Specifications," Oracle Java SE Docs, 2023. [Online]. Available: https://oracle.com. [Accessed: Sep. 28, 2026].
+
 [6] QuickBlox, "A Beginner’s Guide to Chat App Architecture," QuickBlox Blog, Dec. 16, 2022. [Online]. Available: https://quickblox.com. [Accessed: Sep. 28, 2026].
+
 [7] JSON Organization, "Java Reference Library for Object Serialization and Token Handling," JSON Org Docs, 2024. [Online]. Available: https://github.io. [Accessed: Sep. 28, 2026].
