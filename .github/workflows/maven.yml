@@ -22,4 +22,4 @@ jobs:
         cache: maven
 
     - name: Build project and execute JUnit tests
-      run: mvn -B test --file pom.xml
+      run: mvn -B test -Dmaven.compiler.release=17 --file pom.xml
