@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.quickchat.quickchat.MessageTest" time="0.097" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.quickchat.quickchat.MessageTest" time="0.001" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\test-classes;C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\classes;C:\Users\donny\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\donny\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\test-classes;C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\classes;C:\Users\donny\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\donny\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\donny\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="D:\bin"/>
-    <property name="sun.java.command" value="C:\Users\donny\AppData\Local\Temp\surefire15958777493694037192\surefirebooter-20261019155155788_3.jar C:\Users\donny\AppData\Local\Temp\surefire15958777493694037192 2026-10-19T15-51-55_437-jvmRun1 surefire-20261019155155788_1tmp surefire_0-20261019155155788_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\donny\AppData\Local\Temp\surefire538577665514165294\surefirebooter-20261115000512303_3.jar C:\Users\donny\AppData\Local\Temp\surefire538577665514165294 2026-11-15T00-05-11_968-jvmRun1 surefire-20261115000512303_1tmp surefire_0-20261115000512303_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.quickchat.quickchat.MessageTest"/>
-    <property name="surefire.test.class.path" value="C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\test-classes;C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\classes;C:\Users\donny\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\donny\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\test-classes;C:\Users\donny\OneDrive\Documents\NetBeansProjects\QuickChat\target\classes;C:\Users\donny\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\donny\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\donny\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\donny"/>
     <property name="user.language" value="en"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\donny\AppData\Local\Temp\surefire15958777493694037192\surefirebooter-20261019155155788_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\donny\AppData\Local\Temp\surefire538577665514165294\surefirebooter-20261115000512303_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26.0.2.1+1-7"/>
@@ -61,9 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testMessageHashGeneration" classname="com.quickchat.quickchat.MessageTest" time="0.014"/>
+  <testcase name="testMessageHashGeneration" classname="com.quickchat.quickchat.MessageTest" time="0.0"/>
   <testcase name="testRecipientNumberSuccess" classname="com.quickchat.quickchat.MessageTest" time="0.0"/>
   <testcase name="testRecipientNumberFailure" classname="com.quickchat.quickchat.MessageTest" time="0.0"/>
+  <testcase name="testStoreMessageAsJSON" classname="com.quickchat.quickchat.MessageTest" time="0.0"/>
   <testcase name="testMessageLengthSuccess" classname="com.quickchat.quickchat.MessageTest" time="0.0"/>
   <testcase name="testMessageLengthFailure" classname="com.quickchat.quickchat.MessageTest" time="0.0"/>
 </testsuite>
